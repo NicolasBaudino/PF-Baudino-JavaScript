@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ÍCONO PÁGINA -->
+    <link rel="shortcut icon" href="img/libroIcono.ico" type="image/x-icon">
+    <title>Productos</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/libro.png" alt="Logo libro" width="40px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                        <a class="nav-link active" aria-current="page" href="productos.html">PRODUCTOS</a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <a class="nav-link" href="carro.html"><img src="img/Carrito.png" alt="Carrito" width="35px" ></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- TITULO -->
+        <div class="col-12">
+            <h1 class="centradoTextos">PRODUCTOS</h1>
+        </div>
+        
+        <div class="vista container-fluid">
+            <div class="container-fluid col-12 col-md-2 d-flex justify-content-center">
+                <!-- BOTONES -->
+                <div class="m-md-2 w-50">
+                    <label for="" class="d-block">Ordenar por:</label>
+                    <button type="button" class="btn btn-secondary" id="btnMenorMayor">Menor a mayor</button>
+                    <button type="button" class="btn btn-secondary mt-1" id="btnMayorMenor">Mayor a menor</button>
+                </div>
+            </div>
+        
+            <!-- PRODUCTOS -->
+            <div class="container-fluid col-12 col-md-10 ">
+                <div id="prods" class="row">
+                    <!-- CARTAS DE LOS PRODUCTOS -->
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="productos.js"></script>
+    <script src="renderProductos.js"></script>
+</body>
+</html>

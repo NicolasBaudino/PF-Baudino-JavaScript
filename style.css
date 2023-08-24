@@ -1,0 +1,86 @@
+/* FUENTES */
+@font-face {
+    font-family: "RobotoBold";
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+header {
+    font-family: "RobotoBold";
+    font-size: 20px;
+    position: sticky;
+    z-index: 9999;
+    top: 0px;
+}
+
+.navbar {
+    background-color: #ececec !important;
+}
+
+#navbarNavAltMarkup {
+    justify-content: center;
+} 
+
+
+/* CUERPO */
+body {
+    background-color: white;
+}
+
+h1 {
+    font-family: "RobotoBold";
+    font-size: 60px;
+    color: #cd6272;
+}
+
+.centradoTextos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media ((min-width: 320px) and (max-width: 768px)){
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 769px){
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media ((min-width: 320px) and (max-width: 425px)){
+    #prods {
+        width: 320px;
+    }
+}
+
+@media ((min-width: 320px) and (max-width: 768px)){
+    .vista {
+        display: block;
+    }
+}
+
+@media (min-width: 769px){
+    .vista {
+        display: inline-flex;
+    }
+}
